@@ -1,7 +1,7 @@
 {
     "basic_info": {
-      "description_header": "Cześć",
-      "description": "👋 Jestem Davina Griss. Fikcyjna osoba na potrzeby demonstracji. Pracuję z najnowszymi frameworkami front-end takimi jak Angular, React i Vue. To co teraz widzisz to szablon portfolio od Dorota1997. Jeżeli podoba Ci się ten szablon portfolio nie zapomnij o ⭐, żeby było bardziej rozpoznawalne dla innych użytkowników. Dzięki 💜",
+      "description_header": "Hi",
+      "description": "👋 My name is Nicolas Moulin, I am 28 years old. I am currently training with OpenClassrooms to become a web integrator. Before that, I earned a vocational certificate in carpentry, a field unrelated to this training. My hobbies include video games and motorbiking.",
       "section_name": {
         "about": "About me",
         "projects": "Projects",
@@ -11,105 +11,115 @@
     },
     "projects": [
       {
-        "title": "Animal Shelter",
-        "startDate": "2020",
-        "description": "Najbardziej rozbudowana aplikacja nad którą miałam okazję pracować. Poznałam dużo technologii a mój kod by sprawdzany przez super opiekuna. Aplikacja obsługuje wszystkie procesy adopcji i pozwala na przechowywanie wszelkiej dokumentacji związanej z adopcją zwierząt ze schroniska.",
+        "title": "ArgentBank",
+        "startDate": "2024",
+        "description": "This is the most complex application I have had the opportunity to work on, allowing me to learn many new technologies.",
         "images": [
-          "images/portfolio/animal-shelter/p1.jpg",
-          "images/portfolio/animal-shelter/p2.jpg"
+          "images/portfolio/argent-bank/p1.jpg"
         ],
-        "url": "",
+        "url": "https://github.com/NicolasMoulin1/ArgentBank",
         "technologies": [
           {
-            "class": "devicon-angularjs-plain",
-            "name": "Angular"
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
           },
-          {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
-          },
-          {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
-          }
-        ]
-      },
-      {
-        "title": "Photography",
-        "startDate": "2018",
-        "description": "Osobisty projekt na przedmiot ze studiów. Byłam odpowiedzilna za testowanie aplikacji, która optymalizuje zdjęcia z pomocą popularnych algorytmów używanych przed edytory grafiki takie jak Pixlr czy Adobe Photoshop. Otrzymałam 5-tkę za projekt :)",
-        "images": [
-          "images/portfolio/photography/p1.jpg",
-          "images/portfolio/photography/p2.jpg"
-        ],
-        "url": "https://github.com",
-        "technologies": [
           {
             "class": "devicon-react-original",
             "name": "React"
           },
           {
-            "class": "devicon-javascript-plain",
-            "name": "JavaScript"
+            "class": "devicon-sass-plain",
+            "name": "Scss"
+          },
+          {
+            "class": "devicon-css3-plain",
+            "name": "Css"
+          },
+          {
+            "class": "devicon-html5-plain",
+            "name": "Html5"
           }
         ]
       },
       {
-        "title": "3D Object Viewer",
-        "startDate": "2015",
-        "description": "Jedna z pierwszych aplikacji nad którymi pracowałam na stażu. Musiałam przygotować front-end dla aplikacji, która pokazuje modele 3D znanych budynków. To był także mój pierwszy projekt w frameworku Angular. Dużo się nauczyłam!",
+        "title": "Kasa",
+        "startDate": "2024",
+        "description": "Here are my first steps in developing a web application for real estate rentals using React.",
         "images": [
-          "images/portfolio/adventure/p1.jpg",
-          "images/portfolio/adventure/p2.jpg"
+          "images/portfolio/kasa/p1.jpg",
+          "images/portfolio/kasa/p2.jpg"
         ],
-        "url": "https://github.com",
+        "url": "https://github.com/NicolasMoulin1/Opc-Projet-8/tree/main",
         "technologies": [
           {
-            "class": "devicon-angularjs-plain",
-            "name": "Angular"
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
           },
           {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
+            "class": "devicon-react-original",
+            "name": "React"
           },
           {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
+            "class": "devicon-html5-plain",
+            "name": "Html5"
+          },
+          {
+            "class": "devicon-scss-plain",
+            "name": "Scss"
+          }
+        ]
+      },
+      {
+        "title": "Booki",
+        "startDate": "2023",
+        "description": "Here is one of my first web integration projects created with HTML and CSS. Click on the link in the README to directly access the site page.",
+        "images": [
+          "images/portfolio/booki/p1.jpg",
+          "images/portfolio/booki/p2.jpg"
+        ],
+        "url": "https://nicolasmoulin1.github.io/Projet-3-Booki/",
+        "technologies": [
+          {
+            "class": "devicon-html5-plain",
+            "name": "Html5"
+          },
+          {
+            "class": "devicon-css3-plain",
+            "name": "Css"
+          },
+          {
+            "class": "",
+            "name": ""
           }
         ]
       }
     ],
     "experience": [
       {
-        "company": "DefOpenSource",
-        "title": "Front-End Developer",
-        "years": "10.2019 - obecnie",
+        "company": "OpenClassRoom",
+        "title": "Web Integrator",
+        "years": "09.2023 - present",
         "mainTech": [
-          "Angular 8/9/10"
+          "Html",
+          "Css"
         ],
         "technologies": [
-          "REST API",
-          "RxJS",
+          "Html",
+          "Css",
+          "Scss",
           "JavaScript",
-          "Bootstrap",
-          "MDBootstrap",
-          "EF Core",
-          "Angular Material"
+          "React",
+          "ReduxToolKit"
         ]
       },
       {
-        "company": "Serros Solutions",
-        "title": "Stażystka",
-        "years": "01.2018 - 09.2019",
+        "company": "",
+        "title": "",
+        "years": "",
         "mainTech": [
-          "Angular 7/8"
+          ""
         ],
         "technologies": [
-          "REST API",
-          "RxJS",
-          "Swagger",
-          "JavaScript",
-          "DHTMLX Gantt"
         ]
       }
     ]

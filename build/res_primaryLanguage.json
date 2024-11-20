@@ -1,0 +1,127 @@
+{
+    "basic_info": {
+      "description_header": "Hi",
+      "description": "👋 Je m'appelle Nicolas Moulin, j'ai 28 ans. Actuellement, je suis en formation chez OpenClassrooms pour devenir intégrateur web. Avant cela, j'ai obtenu un CAP en menuiserie, un domaine qui n'a rien à voir avec cette formation. Mes loisirs incluent les jeux vidéo et la moto.",
+      "section_name": {
+        "about": "À propos",
+        "projects": "Projets",
+        "skills": "Skills",
+        "experience": "Experience"
+      }
+    },
+    "projects": [
+      {
+        "title": "ArgentBank",
+        "startDate": "2024",
+        "description": "C'est l'application la plus complexe sur laquelle j'ai eu l'occasion de travailler, me permettant d'apprendre de nombreuses technologies.",
+        "images": [
+          "images/portfolio/argent-bank/p1.jpg"
+        ],
+        "url": "https://github.com/NicolasMoulin1/ArgentBank",
+        "technologies": [
+          {
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
+          },
+          {
+            "class": "devicon-react-original",
+            "name": "React"
+          },
+          {
+            "class": "devicon-sass-original",
+            "name": "Scss"
+          },
+          {
+            "class": "devicon-css3-plain",
+            "name": "Css"
+          },
+          {
+            "class": "devicon-html5-plain",
+            "name": "Html5"
+          }
+        ]
+      },
+      {
+        "title": "Kasa",
+        "startDate": "2024",
+        "description": "Voici mes premiers pas dans le développement d'une application web de location immobilière avec React.",
+        "images": [
+          "images/portfolio/kasa/p1.jpg",
+          "images/portfolio/kasa/p2.jpg"
+        ],
+        "url": "https://github.com/NicolasMoulin1/Opc-Projet-8/tree/main",
+        "technologies": [
+          {
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
+          },
+          {
+            "class": "devicon-react-original",
+            "name": "React"
+          },
+          {
+            "class": "devicon-html5-plain",
+            "name": "Html5"
+          },
+          {
+            "class": "devicon-scss-plain",
+            "name": "Scss"
+          }
+        ]
+      },
+      {
+        "title": "Booki",
+        "startDate": "2023",
+        "description": "Voici l'un de mes premiers projets d'intégration web réalisés avec HTML et CSS. Cliquez sur le lien dans README pour accéder directement à la page du site.",
+        "images": [
+          "images/portfolio/booki/p1.jpg",
+          "images/portfolio/booki/p2.jpg"
+        ],
+        "url": "https://github.com/NicolasMoulin1/Projet-3-Booki",
+        "technologies": [
+          {
+            "class": "devicon-html5-plain",
+            "name": "Html5"
+          },
+          {
+            "class": "devicon-css3-plain",
+            "name": "Css"
+          },
+          {
+            "class": "",
+            "name": ""
+          }
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "OpenClassRoom",
+        "title": "Intégrateur Web",
+        "years": "09.2023 - present",
+        "mainTech": [
+          "Html",
+          "Css"
+        ],
+        "technologies": [
+          "Html",
+          "Css",
+          "Scss",
+          "JavaScript",
+          "React",
+          "ReduxToolKit"
+
+        ]
+      },
+      {
+        "company": "",
+        "title": "",
+        "years": "",
+        "mainTech": [
+          ""
+        ],
+        "technologies": [
+        ]
+      }
+    ]
+  }

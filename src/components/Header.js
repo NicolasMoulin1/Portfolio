@@ -1,38 +1,36 @@
-import React, { Component } from "react";
+import React, { useState, useMemo } from "react";
 import Typical from "react-typical";
 import Switch from "react-switch";
 
-class Header extends Component {
-  titles = [];
+const Header = ({ sharedData }) => {
+  const [checked, setChecked] = useState(false);
 
-  constructor() {
-    super();
-    this.state = { checked: false };
-    this.onThemeSwitchChange = this.onThemeSwitchChange.bind(this);
-  }
+  // Gestion du changement de thème
+  const onThemeSwitchChange = (checked) => {
+    setChecked(checked);
+    setTheme();
+  };
 
-  onThemeSwitchChange(checked) {
-    this.setState({ checked });
-    this.setTheme();
-  }
-
-  setTheme() {
-    var dataThemeAttribute = "data-theme";
-    var body = document.body;
-    var newTheme =
+  const setTheme = () => {
+    const dataThemeAttribute = "data-theme";
+    const body = document.body;
+    const newTheme =
       body.getAttribute(dataThemeAttribute) === "dark" ? "light" : "dark";
     body.setAttribute(dataThemeAttribute, newTheme);
-  }
+  };
 
-  render() {
-    if (this.props.sharedData) {
-      var name = this.props.sharedData.name;
-      this.titles = this.props.sharedData.titles.map(x => [ x.toUpperCase(), 1500 ] ).flat();
-    }
+  // Récupération des données
+  const name = sharedData?.name || "";
+  const titles = sharedData
+    ? sharedData.titles.map((x) => [x.toUpperCase(), 1500]).flat()
+    : [];
 
-    const HeaderTitleTypeAnimation = React.memo( () => {
-      return <Typical className="title-styles" steps={this.titles} loop={50} />
-    }, (props, prevProp) => true);
+  // Memoization pour éviter les re-rendus inutiles de l'animation
+  const HeaderTitleTypeAnimation = useMemo(() => {
+    return (
+      <Typical className="title-styles" steps={titles} loop={50} />
+    );
+  }, [titles]);
 
     return (
       <header id="home" style={{ height: window.innerHeight - 140, display: 'block' }}>
@@ -48,8 +46,8 @@ class Header extends Component {
                 <HeaderTitleTypeAnimation />
               </div>
               <Switch
-                checked={this.state.checked}
-                onChange={this.onThemeSwitchChange}
+                checked={checked}
+                onChange={onThemeSwitchChange}
                 offColor="#baaa80"
                 onColor="#353535"
                 className="react-switch mx-auto"
@@ -92,7 +90,7 @@ class Header extends Component {
         </div>
       </header>
     );
-  }
-}
+  };
+
 
 export default Header;

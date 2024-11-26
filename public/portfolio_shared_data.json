@@ -7,11 +7,6 @@
           "name": "github",
           "url": "https://github.com/NicolasMoulin1",
           "class": "fab fa-github"
-        },
-        {
-          "name": "instagram",
-          "url": "https://www.instagram.com",
-          "class": "fab fa-instagram"
         }
       ],
       "image": "myProfile.jpg"

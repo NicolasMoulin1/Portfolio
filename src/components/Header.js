@@ -4,8 +4,6 @@ import Switch from "react-switch";
 
 const Header = ({ sharedData }) => {
   const [checked, setChecked] = useState(false);
-
-  //  Gestion du changement de thème
   const onThemeSwitchChange = (checked) => {
     setChecked(checked);
     setTheme();
@@ -19,40 +17,6 @@ const Header = ({ sharedData }) => {
     body.setAttribute(dataThemeAttribute, newTheme);
   };
 
-  // Utilisation de useMemo pour les titres
-  const title = useMemo(() => {
-    return sharedData?.title
-    ? sharedData.title.map((x) => [x.toUpperCase(), 1500]).flat()
-    : [];
-  }, [sharedData]);
-
-  // Composant d'animation des titres
-  const HeaderTitleTypeAnimation = useMemo(() => {
-    return <Typical className="title-styles" steps={title} loop={50} />;
-  }, [title]);
-
-  // Récupération du nom
-  const name = sharedData?.name || "";
-
-  return (
-    <header
-      id="home"
-      style={{ height: window.innerHeight - 140, display: "block" }}
-    >
-      <div className="row aligner" style={{ height: "100%" }}>
-        <div className="col-md-12">
-          <div>
-            <span
-              className="iconify header-icon"
-              data-icon="la:laptop-code"
-              data-inline="false"
-            ></span>
-            <br />
-            <h1 className="mb-0">
-              <Typical steps={[name]} wrapper="p" />
-            </h1>
-            <div className="title-container">
-              {HeaderTitleTypeAnimation}
             </div>
             <Switch
               checked={checked}
@@ -96,9 +60,6 @@ const Header = ({ sharedData }) => {
             />
           </div>
         </div>
-      </div>
-    </header>
-  );
-};
+
 
 export default Header;
